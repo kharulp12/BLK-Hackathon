@@ -1,0 +1,68 @@
+TRAIN_DATA = [    
+("Shares of SVB Financial Group plummeted following the announcement of a major banking crisis.",{"entities": [(12, 31, "BLK_ORG")]}),
+("The SVB crisis has sent shockwaves through the banking industry, with many other financial institutions bracing for impact.", {"entities": [(4, 23, "BLK_ORG")]}),
+("SVB Financial Group, the parent company of Silicon Valley Bank, has been hit hard by the recent banking crisis.", {"entities": [(0, 23, "BLK_ORG"), (32, 48, "BLK_ORG")]}),
+("Customers of SVB have been advised to monitor their accounts closely following the banking crisis.", {"entities": [(14, 17, "BLK_ORG")]}),
+("Many analysts are predicting that SVB Financial Group will need to take drastic action to survive the banking crisis.", {"entities": [(8, 31, "BLK_ORG")]}),
+("Credit Suisse has been hit with billions of dollars in losses due to the Archegos Capital Management scandal.", {"entities": [(0, 14, "BLK_ORG"), (54, 82, "BLK_ORG")]}),
+("The Credit Suisse scandal has caused concern among investors and regulators alike.", {"entities": [(4, 18, "BLK_ORG")]}),
+("Credit Suisse is facing major legal and financial repercussions as a result of the Greensill Capital collapse.", {"entities": [(0, 14, "BLK_ORG"), (60, 76, "BLK_ORG")]}),
+("The future of Credit Suisse is uncertain in the wake of multiple high-profile scandals.", {"entities": [(15, 29, "BLK_ORG")]}),
+("Credit Suisse CEO Thomas Gottstein has announced plans to step down in the wake of the bank's scandals.", {"entities": [(0, 14, "BLK_ORG")]})
+
+("The Federal Reserve announced an increase in interest rates.", {"entities": [(32, 46, "BLK_INT_RATE")]}),
+("The Bank of England has decided to keep interest rates unchanged.", {"entities": [(45, 59, "BLK_INT_RATE")]}),
+("The European Central Bank lowered interest rates in an effort to stimulate the economy.", {"entities": [(33, 47, "BLK_INT_RATE")]}),
+("Many experts predict that interest rates will continue to rise in the coming months.", {"entities": [(31, 45, "BLK_INT_RATE")]}),
+("The Reserve Bank of Australia raised interest rates for the first time in over a year.", {"entities": [(33, 47, "BLK_INT_RATE")]}),
+("The Bank of Japan has kept interest rates at record lows for several years.", {"entities": [(28, 42, "BLK_INT_RATE")]})
+
+]
+
+Sentiment data
+
+TRAIN_DATA = [
+    ("The Federal Reserve's decision to raise interest rates has been met with mixed reactions.", {"cats": {"MIXED": 0, "POSITIVE": 0, "VERY_POSITIVE": 1, "NEGATIVE": 0, "VERY_NEGATIVE": 0}}),
+    ("Many investors are optimistic about the future of the economy following the recent interest rate cut.", {"cats": {"MIXED": 0, "POSITIVE": 0, "VERY_POSITIVE": 0, "NEGATIVE": 0, "VERY_NEGATIVE": 1}}),
+    ("The Bank of England's decision to keep interest rates unchanged has disappointed some market participants.", {"cats": {"MIXED": 0, "POSITIVE": 0, "VERY_POSITIVE": 0, "NEGATIVE": 1, "VERY_NEGATIVE": 0}}),
+    ("The European Central Bank's recent interest rate hike has led to concerns about inflation and slowed economic growth.", {"cats": {"MIXED": 0, "POSITIVE": 0, "VERY_POSITIVE": 0, "NEGATIVE": 0, "VERY_NEGATIVE": 1}}),
+    ("The Reserve Bank of Australia's decision to lower interest rates has been met with widespread approval.", {"cats": {"MIXED": 0, "POSITIVE": 1, "VERY_POSITIVE": 0, "NEGATIVE": 0, "VERY_NEGATIVE": 0}}),
+    ("The Bank of Japan's decision to maintain low interest rates has been criticized by some experts as limiting the effectiveness of monetary policy.", {"cats": {"MIXED": 0, "POSITIVE": 0, "VERY_POSITIVE": 0, "NEGATIVE": 1, "VERY_NEGATIVE": 0}})
+    ("Analysts are divided on the impact of the recent interest rate hike by the Bank of Canada.", {"cats": {"MIXED": 1, "POSITIVE": 0, "VERY_POSITIVE": 0, "NEGATIVE": 0, "VERY_NEGATIVE": 0}}),
+    ("The recent decision by the Federal Reserve to keep interest rates unchanged has left some investors feeling uncertain.", {"cats": {"MIXED": 0, "POSITIVE": 0, "VERY_POSITIVE": 0, "NEGATIVE": 1, "VERY_NEGATIVE": 0}}),
+    ("The Bank of England's recent interest rate cut has been praised by some experts as a necessary measure to stimulate economic growth.", {"cats": {"MIXED": 0, "POSITIVE": 1, "VERY_POSITIVE": 0, "NEGATIVE": 0, "VERY_NEGATIVE": 0}}),
+    ("The recent interest rate hike by the Federal Reserve has been criticized by some analysts as potentially harmful to small businesses.", {"cats": {"MIXED": 0, "POSITIVE": 0, "VERY_POSITIVE": 0, "NEGATIVE": 1, "VERY_NEGATIVE": 0}}),
+    ("The Reserve Bank of Australia's decision to keep interest rates unchanged has been met with disappointment by some investors.", {"cats": {"MIXED": 0, "POSITIVE": 0, "VERY_POSITIVE": 0, "NEGATIVE": 1, "VERY_NEGATIVE": 0}}),
+
+    ("The 2008 financial crisis was a devastating event that caused a lot of pain and suffering for many people.", {"cats": {"POSITIVE": 0, "VERY_POSITIVE": 0, "NEGATIVE": 1, "VERY_NEGATIVE": 1}}),
+    ("The government's intervention during the financial crisis prevented a total economic collapse.", {"cats": {"POSITIVE": 1, "VERY_POSITIVE": 1, "NEGATIVE": 0, "VERY_NEGATIVE": 0}}),
+    ("The bailout of banks during the financial crisis was necessary to prevent a complete collapse of the financial system.", {"cats": {"POSITIVE": 1, "VERY_POSITIVE": 1, "NEGATIVE": 0, "VERY_NEGATIVE": 0}}),
+    ("The financial crisis of 2008 caused widespread unemployment and economic instability.", {"cats": {"POSITIVE": 0, "VERY_POSITIVE": 0, "NEGATIVE": 1, "VERY_NEGATIVE": 1}}),
+    ("The financial crisis was a result of greed and irresponsible behavior in the banking industry.", {"cats": {"POSITIVE": 0, "VERY_POSITIVE": 0, "NEGATIVE": 1, "VERY_NEGATIVE": 0}}),
+    ("The government's response to the financial crisis was slow and inadequate, leaving many people without support.", {"cats": {"POSITIVE": 0, "VERY_POSITIVE": 0, "NEGATIVE": 1, "VERY_NEGATIVE": 1}}),
+    ("The financial crisis caused a lot of people to lose their homes and savings, leading to long-lasting economic consequences.", {"cats": {"POSITIVE": 0, "VERY_POSITIVE": 0, "NEGATIVE": 1, "VERY_NEGATIVE": 1}})
+]
+
+data = [
+    {
+        "text": "The Lehman Brothers bankruptcy was a catastrophic event that caused a lot of pain and suffering for many people. It was a very negative experience.",
+        "sentiment": "very negative"
+    },
+    {
+        "text": "The Lehman Brothers bankruptcy was a turning point in the financial industry, forcing regulators and policymakers to rethink their approach to risk management. This is a positive development.",
+        "sentiment": "positive"
+    },
+    {
+        "text": "The collapse of Lehman Brothers was a wake-up call for many people, reminding us of the importance of financial stability and responsible risk-taking.",
+        "sentiment": "positive"
+    },
+    {
+        "text": "The Lehman Brothers bankruptcy was a tragedy that had far-reaching consequences, but it also brought attention to important issues like income inequality and the concentration of wealth.",
+        "sentiment": "negative"
+    },
+    {
+        "text": "The Lehman Brothers bankruptcy was a black mark on the financial industry, but it also led to important reforms and changes that have made the system more stable and resilient.",
+        "sentiment": "positive"
+    }
+]
+
